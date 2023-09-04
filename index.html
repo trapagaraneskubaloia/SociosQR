@@ -49,11 +49,11 @@
 </head>
 <body>
   <script>
-    const AS_URL_BASE = "https://script.google.com/a/~/macros/s/AKfycbzmJanzRYmKu_kWKX1m24jxAoEr9Xg68XrWY_npArgeYJyNdkdarSFdC10-v3qi8yo6/exec";
+    const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbzmJanzRYmKu_kWKX1m24jxAoEr9Xg68XrWY_npArgeYJyNdkdarSFdC10-v3qi8yo6/exec";
     
     var url = document.location.href;
     var k = url.substr(url.lastIndexOf("k=")+2);
-    console.log("hello world");
+    console.log(k);
     if(k){
       fetch(AS_URL_BASE+'?k='+k)
       .then(r => r.text())
